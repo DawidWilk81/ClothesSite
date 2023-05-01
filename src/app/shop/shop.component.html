@@ -1,0 +1,30 @@
+<app-navigation></app-navigation>
+<div class="container-fluid m-0 p-0" id="shopWhole">
+    <div class="row m-0 p-0">
+        <div class="col-12 " id="naviCont">
+            <div id="menu" class="row m-0 p-3 d-flex justify-content-start">
+                    <div class="col-3 menuBtn ml-4" 
+                    *ngFor="let item of menuValues"
+                    [ngStyle]="{'background-image': 'url(' + item.image + ')'}"
+                    >{{item.title}}
+                    </div>
+            </div>
+        </div>
+        <div class='col-12 p-3' id="cardCont">
+            <b><h3>MIECZE</h3></b>
+            <div class="row m-0 p-0">
+                <div class="col-12 col-md-4 cardC  p-2" *ngFor="let x of items">
+                    <div class="card p-2">
+                        <div class="cardImg">
+                            <img [src]="x.image" alt="sword_item">
+                        </div>
+                        <div class="cardInfo d-flex flex-column">
+                            <b class="text-center"><h3>{{x.title}}</h3></b>
+                            <p class="text-cente">{{x.description}}</p>
+                            <button class="btn btn-primary w-100 mx-auto mt-auto">{{x.price | currency}} PLN</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

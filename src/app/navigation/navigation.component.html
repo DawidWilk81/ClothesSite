@@ -1,0 +1,19 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light" id="navigation">
+    <h3><b class="navbar-brand cursor-pointer" routerLink="/">Clothland</b></h3>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ml-auto text-center">
+        <li class="nav-item active mr-2 p-0" [ngClass]="{'imHere': urlNow == '/'}">
+          <a class="nav-link  m-0" (click)="change('/')">Home</a>
+        </li>
+        <li class="nav-item mr-2 p-0 mt-1" [ngClass]="{'imHere': urlNow == '/shop'}">
+          <a class="nav-link  m-0" (click)="change('shop')">Sklep</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

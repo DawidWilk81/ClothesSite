@@ -1,0 +1,41 @@
+@keyframes knightAnime{
+    0%{
+        background-size: 100% 105%;
+    }50%{
+        background-size: 100% 100%;
+    }100%{
+        background-size: 100% 105%;
+    }
+}
+
+@keyframes animateText{
+    from{
+        opacity: 0;
+        top:-10px;
+    }to{
+        top:0px;
+        opacity: 1;
+    }
+}
+
+@keyframes animateBg {
+    0%{
+        background-position: 100% 50%;
+    }
+    50%{
+        background-position: 50% 0%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes animateCard {
+    0%{
+        box-shadow: 0 0 0 0 rgba(92, 92, 92, 0.37);
+    }50%{
+        box-shadow: 0 8px 32px 0 rgba(92, 92, 92, 0.37);
+    }100%{
+        box-shadow: 0 0 0 0 rgba(92, 92, 92, 0.37);
+    }
+}
