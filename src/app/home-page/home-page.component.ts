@@ -31,5 +31,7 @@ export class HomePageComponent implements OnInit {
   checkOffer(){
     this.Renderer.setStyle(this.heroPage.nativeElement, 'backgroundSize', '100% 100%');
     setTimeout(() => { window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" }) }, 200);
+    setTimeout(() => {this.router.navigateByUrl('shop') }, 1500);
+
   }
 }

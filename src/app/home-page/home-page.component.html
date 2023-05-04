@@ -1,77 +1,18 @@
 <!-- NAVIGATION START -->
-<app-navigation></app-navigation>
+
 
 <div class="container-fluid m-0 p-0" id="wholeContainer">
+  <app-navigation></app-navigation>
 <!-- HERO PAGE START -->
-<div id="heroPage">
+<div id="heroPage" >
     <div class="row m-0 p-0 w-100 h-100">
-      <div class="col-sm-5 col-12" id="heroText">
-        <h1><b>Szukasz nowego żelaza?</b></h1>
-        <p>Dobrze trafiłeś! Specjalizujemy się w dostarczaniu najlepszego wyboru zbroi i broni dla współczesnego rycerza.
-           Niezależnie od doświadczenia każdy znajdzie to czego aktualnie potrzebuje.</p>
+      <div class="col-sm-4 col-12" id="heroText">
+        <h1><b>Czas na <span style="color:red ">wojnę!</span></b></h1>
+        <p>Z nami przygotujesz się najlepiej! Specjalizujemy się w dostarczaniu najlepszego wyboru zbroi i broni dla współczesnego rycerza.
+        Niezależnie od doświadczenia każdy znajdzie to czego aktualnie potrzebuje.</p>
         <button class="btn btn-primary" id="checkOfferBTN" (mouseover)="showKnight()" (mouseout)="backKnight()" (click)="checkOffer()">Sprawdź ofertę</button>
       </div>
-      <div class="col-sm-7 col-12" id="heroHero" #heroPage name="heroPage" >1</div>
+      <div class="col-sm-8 col-12" id="heroHero" #heroPage name="heroPage" >1</div>
     </div>
-</div>
-<div id="content" class="p-2 container-fluid">
-  <div class="row m-0 p-0">
-    <div class="col-6 col-lg-4 card_C">
-      <div class="card p-2">
-        <div class="cardImg">
-          <img src="../../assets/items/ricardo-cruz.jpg" alt="swordImage">
-        </div>
-        <div class="cardInfo">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec et efficitur dui. Quisque in sem massa. Proin ut
-            tellus rhoncus.</p>
-        </div>
-        <button class="btn btn-primary w-100 mt-auto">Kup za 120zł</button>
-      </div>
-
-    </div>
-
-
-    <div class="col-6 col-lg-4 card_C">
-      <div class="card p-2">
-        <div class="cardImg">
-          <img src="../../assets/items/sword.jpg" alt="swordImage">
-        </div>
-        <div class="cardInfo">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec et efficitur dui. Quisque in sem massa. Proin ut
-            tellus rhoncus.</p>
-        </div>
-        <button class="btn btn-primary w-100 mt-auto">Kup za 120zł</button>
-      </div>
-
-    </div>
-
-
-    <div class="col-6 col-lg-4 card_C">
-      <div class="card p-2">
-        <div class="cardImg">
-          <img src="../../assets/items/ricardo-cruz.jpg" alt="swordImage">
-        </div>
-        <div class="cardInfo">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec et efficitur dui. Quisque in sem massa. Proin ut
-            tellus rhoncus.</p>
-        </div>
-        <button class="btn btn-primary w-100 mt-auto">Kup za 120zł</button>
-      </div>
-
-    </div>
-
-    <div class="col-12 mt-2 text-right" id="shopBtn" routerLink="shop"><h3 class="ml-auto"><p class="m-0" ><fa-icon [icon]="cart"></fa-icon>Sklep</p></h3></div>
-
-
-  </div>
 </div>
 </div>

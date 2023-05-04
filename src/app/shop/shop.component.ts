@@ -11,6 +11,7 @@ export interface menu{
 })
 export class ShopComponent implements OnInit {
   items:any;
+  check:any;
   filteredItems:any = [];
   menuValues:menu[] = [
     {title:"Miecze",image:'../../assets/zE4S5G01.svg'},
@@ -25,26 +26,31 @@ export class ShopComponent implements OnInit {
     private _itemsService:ItemsnService
   ) { 
     this.items = this._itemsService.returnItems();
+    this.filteredItems = this.items;
     window.scrollTo(0, 0);
   }
 
   ngOnInit(): void {
-
     console.table(this.items);
   }
 
   // Component Functions
 
-  filterArray(array: any[], value:string) {
-    return array.filter(item => item.type.includes(value));
+  filterArray(array:any[], value:string) {
+    console.table(array.filter(item => item.type.includes(value)))
+    console.log('sse', value.trim())
+    return array.filter(item => item.type.includes(value.trim()));
   }
 
   filter($e:any){
-    let check  = $e.target.innerHTML;
-    if($e.target.innerHTML === 'Wszystko'){
-      console.log('wsio');
-    }else if($e.target.innerHTML != 'Wszystko'){
-      this.filteredItems = this.filterArray(this.items, check);
+    this.check = $e.target.innerHTML;
+    console.log(typeof this.check)
+    if(this.check == 'RESET '){
+      console.log('rESSESE');
+      this.filteredItems = this._itemsService.returnItems();
+    }else if($e.target.innerHTML != 'RESET'){
+      console.log('target:', typeof(this.check))
+      this.filteredItems = this.filterArray(this.items, this.check);
     }
     console.log($e.target.innerHTML);
   }
