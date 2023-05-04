@@ -1,18 +1,17 @@
 <!-- NAVIGATION START -->
-
-
 <div class="container-fluid m-0 p-0" id="wholeContainer">
   <app-navigation></app-navigation>
-<!-- HERO PAGE START -->
-<div id="heroPage" >
-    <div class="row m-0 p-0 w-100 h-100">
-      <div class="col-sm-4 col-12" id="heroText">
-        <h1><b>Czas na <span style="color:red ">wojnę!</span></b></h1>
-        <p>Z nami przygotujesz się najlepiej! Specjalizujemy się w dostarczaniu najlepszego wyboru zbroi i broni dla współczesnego rycerza.
-        Niezależnie od doświadczenia każdy znajdzie to czego aktualnie potrzebuje.</p>
-        <button class="btn btn-primary" id="checkOfferBTN" (mouseover)="showKnight()" (mouseout)="backKnight()" (click)="checkOffer()">Sprawdź ofertę</button>
+  <!-- HERO PAGE START -->
+  <div id="heroPage" >
+      <div class="row m-0 p-0 w-100 h-100">
+        <div class="col-sm-4 col-12" id="heroText">
+          <h1><b>Czas na <span style="color:red ">wojnę!</span></b></h1>
+          <p>Z nami przygotujesz się najlepiej! Specjalizujemy się w dostarczaniu najlepszego wyboru zbroi i broni dla współczesnego rycerza.
+          Niezależnie od doświadczenia każdy znajdzie to czego aktualnie potrzebuje.</p>
+          <button class="btn btn-primary" id="checkOfferBTN" [disabled]="clickedBtn" (click)="clickBtn()" (mouseover)="showKnight()" (mouseout)="backKnight()" (click)="checkOffer()">Sprawdź ofertę</button>
+        </div>
+        <div class="col-sm-8 col-12" id="heroHero" #heroPage name="heroPage" >1</div>
       </div>
-      <div class="col-sm-8 col-12" id="heroHero" #heroPage name="heroPage" >1</div>
-    </div>
-</div>
+  </div>
+
 </div>

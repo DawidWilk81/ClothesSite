@@ -45,10 +45,10 @@ export class ShopComponent implements OnInit {
   filter($e:any){
     this.check = $e.target.innerHTML;
     console.log(typeof this.check)
-    if(this.check == 'RESET '){
+    if(this.check == 'Wszystko '){
       console.log('rESSESE');
       this.filteredItems = this._itemsService.returnItems();
-    }else if($e.target.innerHTML != 'RESET'){
+    }else if($e.target.innerHTML != 'Wszystko'){
       console.log('target:', typeof(this.check))
       this.filteredItems = this.filterArray(this.items, this.check);
     }

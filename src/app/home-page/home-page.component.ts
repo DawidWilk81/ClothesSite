@@ -10,9 +10,12 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 export class HomePageComponent implements OnInit {
   @ViewChild('heroPage') heroPage!:ElementRef;
   cart = faCartShopping;
+  currentUrl:string = '';
+  clickedBtn:boolean = false;
+
   constructor(private router:Router,
               private Renderer:Renderer2) { }
-  currentUrl:string = '';
+  
   ngOnInit(): void {
     this.currentUrl = this.router.url;
   } 
@@ -20,12 +23,14 @@ export class HomePageComponent implements OnInit {
   showKnight(){
     this.Renderer.setStyle(this.heroPage.nativeElement, 'backgroundSize', '220% 250%');
     this.Renderer.setStyle(this.heroPage.nativeElement, 'backgroundPosition', 'top');
-
-    
   }
   //Push knight back
   backKnight(){
     this.Renderer.setStyle(this.heroPage.nativeElement, 'backgroundSize', '100% 100%');
+  }
+
+  clickBtn(){
+    this.clickedBtn = !this.clickedBtn;
   }
 
   checkOffer(){

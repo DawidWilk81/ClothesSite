@@ -63,11 +63,6 @@ html{
                 border: none;
                 background-color:rgba(178, 34, 34, 0.473);
                 box-shadow: 4px 3px 2px 0 rgba(97, 8, 8, 0.76);
-                backdrop-filter: blur( 4px );
-                -webkit-backdrop-filter: blur( 4px );
-                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.1);
-                -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.1);
-                -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.1);
                 z-index: 40000;
 
                 &:hover{
