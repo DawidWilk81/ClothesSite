@@ -1,6 +1,7 @@
 #navigation{
     height: 6vh;
-    // background-color: #333333;
+    background-color: rgb(151, 136, 107);
+
     .navbar-brand{
         cursor: pointer;
     }
@@ -14,7 +15,10 @@
     }
     #navbarContent{
         height: 100%;
+        width: 100vw;
         z-index: 200;
+        height: auto;
+        padding:5px 0;  
         ul{
             height: 100%;
         }
@@ -29,6 +33,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: rgb(128, 113, 83);
             &:hover{
                 cursor: pointer;
                 background-color: #f9f9f92d;
